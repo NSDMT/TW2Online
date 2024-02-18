@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="#">Anasayfa</a>
+    <a href="#">Hakkımızda</a>
+    <a href="#">Blog</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Galeri
+
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Sergi Resimleri</a>
+        <a href="#">Doğa Resimleri</a>
+        <a href="#">Spor Resimleri</a>
+        <a href="#">Araba Resimleri</a>
+      </div>
+    </div>
+    <a href="#">İletişim</a>
+  </div>
+  <style>
+    .navbar {
+      overflow: hidden;
+      background-color: black;
+      font-family: Arial;
+
+
+    }
+
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      width: calc(20% - 28px);
+    }
+
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+      width: calc(20% - 16px);
+
+    }
+
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+      width: 100%;
+
+    }
+
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: calc(20% - 16px);
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+
+    }
+
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</body>
+
+</html>
